@@ -1,42 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/bg"
+    android:background="@color/white"
     tools:context=".ConferenceActivity">
 
-    <RelativeLayout
+    <!-- Meeting ID Card (Fixed at Top) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/meeting_id_card"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:background="@color/white"
+        android:layout_gravity="top">
 
-        <TextView
-            android:id="@+id/meeting_id_textview"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Meeting ID: "
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_margin="10dp" />
+            android:padding="16dp">
 
-        <ImageView
-            android:id="@+id/share_button_imageview"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/share_button"
-            android:layout_alignParentEnd="true"
-            android:layout_marginHorizontal="20dp" />
-    </RelativeLayout>
+            <!-- Meeting ID -->
+            <TextView
+                android:id="@+id/meeting_id_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting ID: 1234567890"
+                android:textColor="@color/dodger_blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingEnd="50dp" />
 
-    <!-- Fixed incorrect LinearLayout tag -->
-    <LinearLayout
+            <!-- Copy Button -->
+            <ImageView
+                android:id="@+id/copy_button_imageview"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toEndOf="@id/meeting_id_textview"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/copy"
+                android:contentDescription="Copy Meeting ID"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/dodger_blue" />
+
+            <!-- Share Button -->
+            <ImageView
+                android:id="@+id/share_button_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/share_button"
+                android:contentDescription="Share Meeting ID"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/dodger_blue" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>>
+
+    <!-- ZEGOCLOUD Video Conference UI (Below the Meeting ID Card) -->
+    <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal" />
+        android:background="@color/electric_blue" />
 
-</LinearLayout>
+</FrameLayout>
