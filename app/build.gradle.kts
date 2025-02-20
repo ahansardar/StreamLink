@@ -70,7 +70,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation ("com.github.ZEGOCLOUD:zego_uikit_prebuilt_video_conference_android:latest.release")
-    implementation ("com.cometchat:chat-sdk-android:4.0.10")
-    implementation("com.cometchat:pro-android-chat-sdk:3.0.13")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+
+
 }
