@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context=".ConferenceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/meeting_id_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meeting ID: "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/share_button_imageview"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/share_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="20dp" />
+    </RelativeLayout>
+
+    <!-- Fixed incorrect LinearLayout tag -->
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</LinearLayout>
