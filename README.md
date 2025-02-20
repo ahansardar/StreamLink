@@ -2,8 +2,7 @@
 🚀 **Join. Connect. Collaborate.**  
 > 🎥 The simplest video conferencing app with **ZEGOCLOUD integration** – No sign-up needed!  
 
-![StreamLink Banner](https://raw.githubusercontent.com/yourusername/StreamLink/main/screenshots/banner.png)  
-*(Replace with an actual banner if you have one!)*  
+<img src="https://github.com/user-attachments/assets/d12dbaef-6790-48c7-acfc-b71fb1dfe461" width="250" height="250" alt="Logo">
 
 [![Android](https://img.shields.io/badge/Android-Kotlin-blue?style=for-the-badge&logo=android)](https://developer.android.com/)  
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)  
@@ -22,9 +21,9 @@
 
 ## 📸 **Screenshots**  
 
-| Login Screen  | Meeting Creation  | In-Meeting Chat  |
-|--------------|-----------------|----------------|
-| ![Login](screenshots/login.png) | ![Create Meeting](screenshots/create_meeting.png) | ![Chat](screenshots/in_meeting_chat.png) |
+| **🔹 Login Screen** | **🔹 Meeting Screen** | **🔹 In-Meeting Chat** |
+|---|---|---|
+| <img src="https://github.com/user-attachments/assets/9907bd98-ff66-4f60-9972-a2090e5186c1" width="250" height="500">  | <img src="https://github.com/user-attachments/assets/99683a49-62d0-4aca-be29-692bd916f4e6" width="250" height="500">  | <img src="https://github.com/user-attachments/assets/77172466-fb9e-4349-a8f5-1819ca63d192" width="250" height="500">  |
 
 
 ---
