@@ -33,10 +33,11 @@ class ConferenceActivity : AppCompatActivity() {
 
         meetingID=intent.getStringExtra("MEETING_ID").toString()
         username=intent.getStringExtra("USERNAME").toString()
-        meetingIDTextView.setText("MEETING ID"+meetingID)
+        meetingIDTextView.setText("Meeting ID: "+meetingID)
         addFragment()
         shareButtonImageView.setOnClickListener {
-            val shareMessage = "Join meeting with this Meeting ID on StreamLink: $meetingID"
+            val shareMessage = "🚀 Join my StreamLink meeting now! \n\n📌 Meeting ID: $meetingID \n\n🔗 Download the app: https://github.com/ahansardar/StreamLink/releases/tag/v1.0.0"
+
             val shareIntent = Intent().apply {
                 action = Intent.ACTION_SEND
                 putExtra(Intent.EXTRA_TEXT, shareMessage)
