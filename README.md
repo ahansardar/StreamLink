@@ -37,7 +37,7 @@
 ---
 
 ## 📥 **Installation**  
-**Step 1:** Download the APK from [here](https://github.com/yourusername/StreamLink/releases)  
+**Step 1:** Download the APK from [here](https://github.com/ahansardar/StreamLink/releases)  
 **Step 2:** Install it on your Android device  
 **Step 3:** Open StreamLink & start conferencing 🎉  
 
